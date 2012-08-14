@@ -37,5 +37,10 @@ namespace _21SocketServer
         }
 
         public Game Game { get; set; }
+
+        public override _21Session CreateAppSession(ISocketSession socketSession)
+        {
+            return base.CreateAppSession(socketSession);
+        }
     }
 }
