@@ -74,7 +74,7 @@ PokerManager.prototype.loadResources = function () {
     /*--Image Loader--*/
 };
 PokerManager.prototype.initCommon = function () {
-    var host = "ws://localhost:14503/";
+    var host = "ws://localhost:1397/";
     var result = connect(host);
 
     if (!result) {
