@@ -12,39 +12,31 @@
         </script>
         <script src="js/zy_click.js">
         </script>
-        <script>
-        </script>
+        <!--Ref Base-->
+	    <script src="Chaos.Game.Poker/Base/jquery-1.7.2.min.js" type="text/javascript"></script>
+	    <script src="Chaos.Game.Poker/Base/quark.base-1.0.0.min.js" type="text/javascript"></script>
+	    <!--Ref Common-->
+	    <script src="Chaos.Game.Poker/Command/Command.js" type="text/javascript"></script>
+	    <script src="Chaos.Game.Poker/Command/PokerCommand.js" type="text/javascript"></script>
+	    <!--Ref Resources-->
+	    <script src="Chaos.Game.Poker/Resource/PokerResource.js" type="text/javascript"></script>
+	    <!--Ref MovieClips-->
+	    <script src="Chaos.Game.Poker/MovieClip/Chair.js" type="text/javascript"></script>
+	    <script src="Chaos.Game.Poker/MovieClip/Player.js" type="text/javascript"></script>
+	    <script src="Chaos.Game.Poker/MovieClip/Card.js" type="text/javascript"></script>
+	    <!--Ref Managers-->
+	    <script src="Chaos.Game.Poker/Manager/CardManager.js" type="text/javascript"></script>
+	    <script src="Chaos.Game.Poker/Manager/PokerManager.js" type="text/javascript"></script>
     </head>
     <body class="um-vp c-wh" ontouchstart>
-        <div id="page_0" class="up ub ub-ver" tabindex="0">
-            <!--header开始-->
-            <div id="header" class="uh c-org c-m1 t-wh">
-                <h1 class="ut ulev0 ut-s tx-c" tabindex="0">AppCan</h1>
-            </div>
-            <!--header结束--><!--content开始-->
-            <div id="content" class="ub-f1 tx-l t-bla ub-img6 res10">
-                
-            </div>
-            <!--content结束--><!--footer开始-->
-            <div id="footer" class="uf c-m2 c-bla t-wh">
-                <h1 class="ut ulev-2 tx-c" tabindex="0">(c) Copyright 3G2WIN and others 2011.
-                    <br>
-                    All rights reserved.
-                </h1>
-            </div>
-            <!--footer结束-->
+        <div id="container" class="up ub ub-ver" tabindex="0">
         </div>
     </body>
     <script>
+    	var pokerManager = null;
     	zy_init();
         window.uexOnload = function(type){
-            if (!type) {
-                zy_con("content", "index_content.html", 0, $$("header").offsetHeight);
-            }
-			window.onorientationchange=window.onresize=function()
-			{
-				zy_resize("content",0,$$("header").offsetHeight);				
-			}
+			pokerManager = new PokerManager();
         }
     </script>
 </html>
