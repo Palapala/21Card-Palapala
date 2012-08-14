@@ -74,13 +74,8 @@ PokerManager.prototype.loadResources = function () {
     /*--Image Loader--*/
 };
 PokerManager.prototype.initCommon = function () {
-    var host = "ws://localhost:1397/";
-    var result = connect(host);
-
-    if (!result) {
-        alert("连接服务器失败,可能你的浏览器不支持WebSocket");
-        return;
-    }
+    var host = new host();
+    host.connect();
 };
 PokerManager.prototype.initGame = function () {
     /*init background*/
