@@ -5,7 +5,7 @@ function host(ip,port)
 	if(ip == undefined)
 		ip = "127.0.0.1";
 	if(port = undefined)
-		port = "12012"
+		port = "1397"
 	
 	var can_send = false;
 	var id = global_host_id;
