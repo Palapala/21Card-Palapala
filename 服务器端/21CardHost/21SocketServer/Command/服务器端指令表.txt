@@ -1,0 +1,6 @@
+﻿JOIN [seat:int] 加入牌局
+	seat 座次
+START 开始牌局
+START_COMPLETE 开始派完牌之后，发消息通知服务器
+HIT 拿牌
+STAND 停牌

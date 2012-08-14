@@ -1,0 +1,14 @@
+﻿ERROR [msg:string] 错误指令
+	msg 错误信息
+PLAYER_LIST [list:List<JTablePlayer>] 玩家清单指令
+	list 玩家清单，每有一次变动，就通知一次
+GAME_START [info:JGameInfo] 游戏开始
+	info 游戏信息
+WAIT_OTHER 等待其他人
+WAIT 等待决策
+HIT [result:JHitResult] 拿牌
+	result 拿牌的结果
+GAME_END [list:List<JPlayerResult>] 游戏结算
+	list 每个玩家的结果，包括牌、胜负
+OUT_INFO [seat:int] 玩家掉线通知
+	seat 掉线的座次
